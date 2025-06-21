@@ -10,6 +10,7 @@
 
     <title>Apple DCF</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="stylesheet" href="index.css" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
@@ -59,11 +60,14 @@
                   </div>
                   <a href="apple-dcf.xlsx" class="flex items-center justify-center mt-4">
                   <div class="flex-wrap gap-3 flex justify-center">
-                    <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#53d22c] text-[#121a0f] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                    >
-                      <span class="truncate">Download DCF Model</span>
-                    </button>
+                    <div class="download-button" data-tooltip="Size: 234Kb">
+                        <div class="download-button-wrapper">
+                          <div class="text">Download DCF Model</div>
+                            <span class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                            </span>
+                          </div>
+                        </div>
                 </a>
                   </div>
                 </div>
@@ -139,6 +143,10 @@
                 <p class="text-[#639155] text-sm font-normal leading-normal">EBITDA Multiple</p>
                 <p class="text-[#121a0f] text-sm font-normal leading-normal">18x</p>
               </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d6e5d2] py-5">
+                <p class="text-[#639155] text-sm font-normal leading-normal">Tax Rate</p>
+                <p class="text-[#121a0f] text-sm font-normal leading-normal">25%</p>
+              </div>
             </div>
             <h2 class="text-[#121a0f] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Investment Thesis</h2>
             <p class="text-[#121a0f] text-base font-normal leading-normal pb-3 pt-1 px-4">
@@ -148,7 +156,19 @@
                 <br />
 
             </p>
-            
+            <h2 class="text-[#121a0f] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">Insights</h2>
+            <p class="text-[#121a0f] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                <ul class="text-[#121a0f] text-[18px] leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">
+                    <li> • Apple is highly profitable and dominant - but Maturing</li>
+                    <li> • Revenue Growth is slowing down, with a focus on services</li>
+                    <li> • The Market is pricing perfection - No Margin of Safety</li>
+                    <li> • Two independent models (DCF & Exit Multiple) agree: Apple is overvalued.</li>
+                    <li> • This is not a short — just a pass at this price.</li>
+                </ul>
+            </p>
+            <h2 class="text-[#121a0f] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">Sensitivity Analysis</h2>
+           <img src="Sensitivity_Analysis.png">
+                        
           </div>
         </div>
         <footer class="flex justify-center">
